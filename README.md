@@ -1,4 +1,4 @@
-# bash-best-practices
+# bash best practices
 a few hints on bash best practice 
 =================================
 
@@ -27,3 +27,7 @@ a few hints on bash best practice
         * -o pipefail fails if any part of a pipe fails
         * -u treat unset variables as an error and exit immediately
         * suggest second line of bash script is: set -eou pipefail
+        * -x prints each command before executing it - expands arguments also
+        * use -E if script contains traps
+    * to start with using a program like shellcheck can be useful - gives your scripts a quick checkover
+    * a useful tool if you use vim is the bash support plugin - see https://www.thegeekstuff.com/2009/02/make-vim-as-your-bash-ide-using-bash-support-plugin/
